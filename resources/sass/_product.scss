@@ -1,0 +1,125 @@
+.section-title{
+    font-family: 'MojitoWeb', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    color: #232323;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;  
+}
+.main-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 75px;
+    padding-bottom: 40px;
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #232323;
+        max-width: 60%;
+    }
+}
+.products-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin-bottom: 25px;
+        p{
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #232323;
+            min-width: 75%;
+        }
+    }
+}
+.products-btn{
+    padding: 8px 60px;
+    outline: 0;
+    font-weight: 600;
+}
+.product-device-slider, .products-device-slider-wrapper{
+    width: 100%;
+}
+.product-device-slider{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .product-device-slider-item{
+        display: flex!important;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        p{
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            justify-content: center;
+            color: #232323;
+            min-width: 75%;
+        }  
+    }
+}
+
+.one-slide-device {
+    background-image: url("/images/economic/img-column-mobile-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.two-slide-device {
+    background-image: url("/images/economic/img-column-mobile-02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.three-slide-device {
+    background-image: url("/images/economic/img-column-mobile-03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.four-slide-device {
+    background-image: url("/images/economic/img-column-mobile-04.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-economy-content-device{
+    padding: 0;
+}
+.main-economy-content-item-device{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 320px) and (max-width: 991px){
+    .main-product{
+        padding: 0 10px;
+        padding-bottom: 50px;
+        p{
+            max-width: 100%;
+        }
+    }
+}

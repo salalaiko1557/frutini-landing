@@ -1,0 +1,125 @@
+.main-form-popup-telephone-hide-wrapper{
+    display: none;
+    form{
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        color: black;
+        padding: 5px 15px 15px 15px;
+        max-height: 90vh;
+        overflow-y: scroll; 
+        i{
+            font-style: normal;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            font-size: 25px;
+            top: 0;
+            filter: invert(1);
+            position: absolute;
+        }
+        h3{
+            font-family: 'MojitoWeb', sans-serif;
+            font-size: 40px;
+            line-height: 80px;
+            text-align: center;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            width: 50%;
+            text-align: center;
+        }
+        .group-input-form{
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+            padding: 0 30px;
+            width: 100%;
+            input{
+                box-shadow: 16px 8px 32px rgba(35, 35, 35, 0.18);
+                border-radius: 0;
+                border: none;
+                outline: none;
+                padding: 5px;
+                text-align: center;
+            }
+            section{
+                display: flex;
+            }
+            aside{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            label{
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+        span{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 18px;
+            text-align: center;
+            color: #232323;
+            opacity: 0.5;
+            width: 50%;
+        }
+    }
+}
+.main-form-popup-telephone-show-wrapper{
+    display: flex;
+    position: fixed;
+    background: rgba(0, 0, 0, .85);
+    z-index: 100;
+    color: red;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+.error{
+    text-align: center;
+    font-size: 13px;
+    color: red;
+}
+.select-msngrs{
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 16px -19px 32px rgba(35, 35, 35, 0.18);
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%;    
+    margin-bottom: 8px;
+}
+select {
+    text-align: center;
+    text-align-last: center;
+}
+option {
+    text-align: left;
+}
+#res_message{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700!important;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff!important;
+    width: 100%!important;
+    opacity: 1!important;
+}
+.alert-success{
+    background-color: #47A209!important;
+}

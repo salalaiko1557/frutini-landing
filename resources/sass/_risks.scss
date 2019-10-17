@@ -1,0 +1,93 @@
+.section-title-risks{
+    font-family: 'MojitoWeb', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    color: #232323;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 100px;
+}
+.main-risks{
+    font-family: 'Montserrat', sans-serif;
+}
+.main-risks-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+}
+.main-risks-content-lists{
+    display: flex;
+    align-items: center;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        margin-right: 20px;
+    }
+}
+.main-risks-content-list-frst, .main-risks-content-list-scnd{
+    h4{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+        color: #47A209;
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+.risks-desktop-slider{
+    width: 100%;
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.main-risks-data{
+    display: flex;
+}
+.main-risks-content-lists-device{
+    width: 100%;
+}
+.main-risks-content-list-device-slider{
+    box-shadow: 4px 4px 16px rgba(35, 35, 35, 0.16);
+    border-radius: 5px;
+    padding-top: 16px;
+    li{
+        h4{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 32px;
+            text-align: center;
+            color: #47A209;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            color: #232323;
+        }
+    }
+}
+.slick-list, .slick-track{
+    height: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 991px){
+    .section-title-risks{
+        font-family: 'MojitoWeb', sans-serif;
+        font-size: 50px;
+        line-height: 80px;
+        color: #232323;
+        margin-bottom: 15px;
+        text-align: center;
+        margin-left: 0;
+    }
+}

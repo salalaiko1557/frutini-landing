@@ -1,0 +1,33 @@
+.main-footer-desktop{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+    align-items: center; 
+    span{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+        color: #232323;
+    }
+}
+
+.main-footer-device{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    align-items: center; 
+    span{
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+        color: #232323;
+    }
+    img{
+        margin-bottom: 10px;
+    }
+}

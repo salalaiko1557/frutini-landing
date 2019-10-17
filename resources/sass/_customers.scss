@@ -1,0 +1,76 @@
+.section-title-customers{
+    font-family: 'MojitoWeb', sans-serif;
+    font-size: 50px;
+    line-height: 80px;
+    color: #232323;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;  
+}
+.main-customers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+.main-customers-content{
+    width: 100%;
+    padding: 0 70px;
+    ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 10px;
+            img{
+                width: 160px;
+                margin-bottom: 20px;
+            }
+            span{
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+                color: #232323;
+            }
+        }
+    }
+}
+.main-customers-content-device{
+    width: 100%;
+    ul{
+        padding: 0;
+        width: 100%;
+        .main-customers-content-device-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 10px;
+            img{
+                width: 160px;
+                margin-bottom: 20px;
+            }
+            span{
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+                color: #232323;
+            }
+        }
+    }
+}
