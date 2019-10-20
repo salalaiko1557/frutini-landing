@@ -63,7 +63,7 @@ $( document ).ready(function() {
     });
     
     $("#readmore-article").readmore({
-        speed: 250, //скорость раскрытия скрытого текста (в миллисекундах)
+        speed: 250,
         collapsedHeight: 50,
         moreLink: '<a href="#" class="readmore-btn">Подробнее о нас</a>',
         lessLink: '<a href="#" class="readmore-btn">Скрыть</a>'
@@ -153,9 +153,9 @@ $( document ).ready(function() {
                   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
               }
           });
-          $('#send_form').html('Sending..');
+          $('#send_form').html('Сохранение данных...');
           $.ajax({
-            url: 'http://localhost:8000/phonedata' ,
+            url: 'http://frutini-landing/phonedata',
             type: "POST",
             data: $('#contact_us').serialize(),
             success: function( response ) {
@@ -168,7 +168,7 @@ $( document ).ready(function() {
                 setTimeout(function(){
                 $('#res_message').hide();
                 $('#msg_div').hide();
-                },1000000);
+                },10000);
             }
           });
         }

@@ -482,11 +482,11 @@
             </div>
             <div class="group-input-form">
                 <label for="email">Введите E-mail</label>
-                <input type="text" name="email" class="form-control" id="email" placeholder="example@email.com">
+                <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
             </div>      
             <div class="group-input-form">
                 <label for="mobile_number">Введите номер телефона для обратного звонка:</label>
-                <input type="text" name="mobile_number" class="form-control" id="mobile_number" placeholder="099-999-99-99" maxlength="10">
+                <input type="number" max="999999999999" name="mobile_number" class="form-control" id="mobile_number" placeholder="099-999-99-99" maxlength="10">
             </div>
             <div class="group-input-form">
                 <label for="mobile_number_mesenger">Введите номер телефона для связи через месенджер:</label>
@@ -496,7 +496,7 @@
                         <option>Telegram</option>
                         <option>WhatsApp</option>
                     </select>
-                    <input type="text" name="mobile_number_mesenger" class="form-control" id="mobile_number_mesenger" placeholder="099-999-99-99" maxlength="10">
+                    <input type="number" max="999999999999" name="mobile_number_mesenger" class="form-control" id="mobile_number_mesenger" placeholder="099-999-99-99" maxlength="10">
                 </aside>
                 </div>
             <div class="alert alert-success d-none" id="msg_div">
