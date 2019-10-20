@@ -154,8 +154,10 @@ $( document ).ready(function() {
               }
           });
           $('#send_form').html('Сохранение данных...');
+        //   var domain = window.location.hostname;
+        //   console.log(domain);
           $.ajax({
-            url: 'https://frutini.com.ua/phonedata',
+            url: '/phonedata',
             type: "POST",
             data: $('#contact_us').serialize(),
             success: function( response ) {

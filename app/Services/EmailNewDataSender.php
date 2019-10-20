@@ -16,9 +16,11 @@ class EmailNewDataSender{
 
     public function sendEmailToAdmin(array $customer)
     {
-        Mail::send('emails.admin', ['customer' => $customer], function ($message) use ($customer) {
+        $email = env('MAIL_ADMIN');
+        info($email);
+        Mail::send('emails.admin', ['customer' => $customer], function ($message) use ($customer, $email) {
             $message->from('support@frutini.com.ua', 'Новая заявка!');
-            $message->to('salalaiko1557@gmail.com')->subject('Новая заявка на frutini');
+            $message->to($email)->subject('Новая заявка на frutini');
         });
     }
 }
