@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Frutini </title>
+        <title>Frutini</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet" type="text/css" >
@@ -518,7 +518,6 @@
     
     <script src="{{ asset('js/slider/slider.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>
 
 
