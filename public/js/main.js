@@ -155,7 +155,7 @@ $( document ).ready(function() {
           });
           $('#send_form').html('Сохранение данных...');
           $.ajax({
-            url: 'http://frutini-landing/phonedata',
+            url: 'http://frutini.com.ua/phonedata',
             type: "POST",
             data: $('#contact_us').serialize(),
             success: function( response ) {
