@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('phonedata', 'FormDataController@phoneDataHandler');
+Route::post('phonedata', 'FormDataController@phoneDataHandler')->name('a1');;

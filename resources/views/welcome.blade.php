@@ -7,11 +7,8 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet" type="text/css" >
-
-
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     </head>
     <body>
     <!-- HEADER SECTION -->
@@ -284,7 +281,7 @@
             <li class="main-economy-content-item-device one-slide-device">
                 <h4>60%</h4>
                 <h5>Маржинальность 60%+</h5>
-                <p>Более 60 процентов id="navigate-dsktp-call-3"наценки для розничных продавцов конфеты</p>
+                <p>Более 60 процентов наценки для розничных продавцов конфеты</p>
             </li>
             <li class="main-economy-content-item-device two-slide-device">
                 <h4>300</h4>

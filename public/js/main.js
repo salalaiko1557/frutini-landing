@@ -32,7 +32,8 @@ $( document ).ready(function() {
         $(".mobile-menu-content").removeClass("d-none").fadeIn(500);
         $("#navigate-dvc").removeClass("d-flex");
         $("#navigate-dvc").addClass("d-none");
-        $("body").css({"overflow" : "hidden"})
+        $("body").css({"overflow": "hidden"});
+        $("html").css({"overflow": "hidden"});
     });
 
     $("#close-mobile-menu").click(function() {
@@ -40,7 +41,8 @@ $( document ).ready(function() {
         $(".mobile-menu-content").addClass("d-none").fadeOut(500);
         $("#navigate-dvc").removeClass("d-none");
         $("#navigate-dvc").addClass("d-flex");
-        $("body").css({"overflow" : "scroll"})
+        $("body, html").css({"overflow-y": "scroll"});
+        $("body, html").css({"overflow-x": "hidden"});
     });
 /**
  * ancors
@@ -59,7 +61,8 @@ $( document ).ready(function() {
         $(".mobile-menu-content").addClass("d-none").fadeOut(500);
         $("#navigate-dvc").removeClass("d-none");
         $("#navigate-dvc").addClass("d-flex");
-        $("body").css({"overflow" : "scroll"})
+        $("body, html").css({"overflow-y": "scroll"});
+        $("body, html").css({"overflow-x": "hidden"});
     });
     
     $("#readmore-article").readmore({
@@ -80,9 +83,12 @@ $( document ).ready(function() {
        $(".main-confidence").css({"filter": "blur(2px)"});
        $(".main-contacts").css({"filter": "blur(2px)"});
        $(".main-footer-desktop").css({"filter": "blur(2px)"});
-       $("body").css({"overflow-y": "hidden"});
+       $("body").css({"overflow": "hidden"});
+       $("html").css({"overflow": "hidden"});
+       
     });
        $('#phone-number').mask("0000000000" , {placeholder: "(000)000-00-00"});
+
        $('#close-callback-form').click(function() {
         $(".main-form-popup-telephone-hide-wrapper").removeClass("main-form-popup-telephone-show-wrapper");
         $(".main-header").css({"filter": "none"});
@@ -94,7 +100,8 @@ $( document ).ready(function() {
         $(".main-confidence").css({"filter": "none"});
         $(".main-contacts").css({"filter": "none"});
         $(".main-footer-desktop").css({"filter": "none"});
-        $("body").css({"overflow-y": "scroll"});
+        $("body, html").css({"overflow-y": "scroll"});
+        $("body, html").css({"overflow-x": "hidden"});
        });
 
      
@@ -154,10 +161,12 @@ $( document ).ready(function() {
               }
           });
           $('#send_form').html('Сохранение данных...');
-        //   var domain = window.location.hostname;
-        //   console.log(domain);
+
+          var domain = window.location.hostname.toString();
+          var url = domain + '/phonedata';
+          console.log(url);
           $.ajax({
-            url: '/phonedata',
+            url: "/phonedata",
             type: "POST",
             data: $('#contact_us').serialize(),
             success: function( response ) {

@@ -940,6 +940,25 @@
   .main-economy-content {
     top: 0;
   }
+
+  .main-economy-content-item-device {
+    padding: 10px;
+  }
+
+  .main-economy-content-item-device p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .main-economy-content-item-device h4 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .main-economy-content-item-device h5 {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .section-title-risks {
@@ -1459,7 +1478,8 @@ option {
   background-color: #47A209 !important;
 }
 
-body {
+body,
+html {
   margin: 0;
   overflow-x: hidden;
 }
