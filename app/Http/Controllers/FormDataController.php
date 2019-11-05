@@ -37,9 +37,9 @@ class FormDataController extends Controller
            [
             'name' => $data['name'],
             'email' => $data['email'],
-            'mobile_call' => $data['mobile_number'],
-            'messager' => $data['name_msngrs'],
-            'mobile_messager' => $data['mobile_number_mesenger'],
+            'mobile_number' => $data['mobile_number'],
+            'name_msngrs' => $data['name_msngrs'],
+            'mobile_number_mesenger' => $data['mobile_number_mesenger'],
             'partner_type' => $data['partner_type'],
             'created_at' => date("Y-m-d H:i:s")
            ]
