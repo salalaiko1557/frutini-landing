@@ -68,8 +68,8 @@ $( document ).ready(function() {
     $("#readmore-article").readmore({
         speed: 250,
         collapsedHeight: 50,
-        moreLink: '<a href="#" class="readmore-btn">Подробнее о нас</a>',
-        lessLink: '<a href="#" class="readmore-btn">Скрыть</a>'
+        moreLink: '<a href="#" class="readmore-btn">Детальніше про нас</a>',
+        lessLink: '<a href="#" class="readmore-btn">Приховати</a>'
         });
    
     $("#navigate-dsktp-call-1, #navigate-dsktp-call-2, #navigate-dsktp-call-3, #navigate-dsktp-call-4, #navigate-dsktp-call-5").click(function() {
@@ -132,27 +132,26 @@ $( document ).ready(function() {
         },
         messages: {
           name: {
-            required: "Введите имя и фамилию",
-            maxlength: "Не более 50 символов"
+            required: "Введіть ім'я та прізвище",
+            maxlength: "Не більше 50 символів"
           },
           mobile_number: {
-            required: "Введите номер телефона. Например: 0951112233",
-            minlength: "Минимум 10 чисел. Например: 0951112233",
-            digits: "Введите только цифры. Например: 0951112233",
-            maxlength: "Не более 12 символов. Например: 0951112233",
+            required: "Введіть номер телефону. Наприклад: 0951112233",
+            minlength: "Мінімум 10 чисел. Наприклад: 0951112233",
+            digits: "Введіть лише цифри. Наприклад: 0951112233",
+            maxlength: "Не більше 12 символів. Наприклад: 0951112233",
           },
           mobile_number_mesenger: {
-            required: "Введите номер телефона. Например: 0951112233",
-            minlength: "Минимум 10 чисел. Например: 0951112233",
-            digits: "Введите только цифры. Например: 0951112233",
-            maxlength: "Не более 12 символов. Например: 0951112233",
+            required: "Введіть номер телефону. Наприклад: 0951112233",
+            minlength: "Мінімум 10 чисел. Наприклад: 0951112233",
+            digits: "Введіть лише цифри. Наприклад: 0951112233",
+            maxlength: "Не більше 12 символів. Наприклад: 0951112233",
           },
           email: {
-              required: "Введите электронный адрес. Например: example@email.com",
-              email: "Введите корректый электронный адрес. Например: example@email.com",
-              maxlength: "Электронный адрес должен быть не длинее 50 символов",
-            },
-             
+            required: "Введіть електронну адресу. Наприклад: example@email.com",
+            email: "Введіть коректний електронну адресу. Наприклад: example@email.com",
+            maxlength: "Електронна адреса має бути не довшим 50 символів",
+          }, 
         },
         submitHandler: function(form) {
          $.ajaxSetup({
@@ -160,19 +159,18 @@ $( document ).ready(function() {
                   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
               }
           });
-          $('#send_form').html('Сохранение данных...');
+          $('#send_form').html('Збереження даних...');
 
           var domain = window.location.hostname.toString();
           var url = domain + '/phonedata';
-          console.log(url);
           $.ajax({
             url: "/phonedata",
             type: "POST",
             data: $('#contact_us').serialize(),
             success: function( response ) {
-                $('#send_form').html('Подтвердить');
+                $('#send_form').html('Підтвердити');
                 $('#res_message').show();
-                $('#res_message').html('Ваши данные успешно сохранены. С Вами свяжутся в ближайшее время');
+                $('#res_message').html("Ваші дані успішно збережені. З Вами зв'яжуться найближчим часом");
                 $('#msg_div').removeClass('d-none');
      
                 document.getElementById("contact_us").reset(); 

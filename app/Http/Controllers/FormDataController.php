@@ -22,13 +22,15 @@ class FormDataController extends Controller
 
     public function phoneDataHandler(Request $request)
     {
+        info($request->all());
         //Validate
         $data = $request->validate([
             'name' => 'required',
             'email' => 'required',
             'mobile_number' => 'required',
             'name_msngrs' => 'required',
-            'mobile_number_mesenger' => 'required'
+            'mobile_number_mesenger' => 'required',
+            'partner_type' => 'required'
             ]);
         //Save to DB
         DB::table('customers')->insert(
@@ -38,6 +40,7 @@ class FormDataController extends Controller
             'mobile_call' => $data['mobile_number'],
             'messager' => $data['name_msngrs'],
             'mobile_messager' => $data['mobile_number_mesenger'],
+            'partner_type' => $data['partner_type'],
             'created_at' => date("Y-m-d H:i:s")
            ]
         );

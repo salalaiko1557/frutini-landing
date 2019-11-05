@@ -9,10 +9,10 @@ class GoogleSheetsHandler{
 
         $client = $this->getClient();
         $service = new \Google_Service_Sheets($client);
-        $spreadsheetId = '1FXrfKJHm7iGQLPiAAZzsKl_xDoz2MAZr4-EcoRtXlPA';
-        $range = 'Sheet1!A1:F3';
+        $spreadsheetId = '1FwG2-9X5hUJ7SJCz2o4YXd--rGp8ELUu8hZr0oxz4cs';
+        $range = 'Sheet1!A1:G3';
         $values = [
-            [$customer['name'], $customer['email'], $customer['mobile_number'], $customer['name_msngrs'], $customer['mobile_number_mesenger'], date("Y-m-d H:i:s")]
+            [$customer['name'], $customer['email'], $customer['mobile_number'], $customer['name_msngrs'], $customer['mobile_number_mesenger'], $customer['partner_type'], date("Y-m-d H:i:s")]
         ];
         $updateBody = new \Google_Service_Sheets_ValueRange([
             'range' => $range,
@@ -53,7 +53,7 @@ class GoogleSheetsHandler{
                 // print 'Enter verification code: ';
                 // $authCode = trim(fgets(STDIN));
                 
-                $authCode = '4/sQF2Vf0IJlAnxhxODgDdK_Umr8KBZvLHxOc7ErfP2gvpUPA-aIrr4Lw';
+                $authCode = '4/swGI5kwZLhvklSmbbFxk9qBIcpScgJFfIJO05ZMXSwzC93nYXaGIy5U';
                 // Exchange authorization code for an access token.
                 $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);
                 $client->setAccessToken($accessToken);

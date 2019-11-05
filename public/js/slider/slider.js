@@ -101,6 +101,26 @@ jQuery(document).ready(function(){
         centerPadding: '60px',
         arrows: false,
       });
+
+      $('.main-goods-content').slick({
+        slidesToShow: 3,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerPadding: '60px',
+        arrows: false,
+      });
+
+      $('.main-goods-content-device').slick({
+        slidesToShow: 1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerPadding: '60px',
+        arrows: false,
+      });
+      
+      
       
     
 });
