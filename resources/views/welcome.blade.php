@@ -10,6 +10,24 @@
         <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet" type="text/css" >
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '952684235115201'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=952684235115201&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
     </head>
     <body>
     <!-- HEADER SECTION -->
@@ -29,9 +47,12 @@
                 <a href="#contacts" class="nav-item">Контакты</a>
             </nav>
             <section class="header-number">
-                <a href="tel:+38050915844">
+                <a href="https://www.instagram.com/frutini_official_ua/?hl=ru" target="_blank">
+                    <img src="{{ asset('svg/icons/icon-instagram.svg') }}" alt="instagaram">
+                </a>
+                <a href="tel:+380509105844">
                     <img src="{{ asset('svg/icons/icon-viber.svg') }}">
-                    <span>+38 (050) 91-58-44</span>
+                    <span>+38 (050) 910-58-44</span>
                 </a>
             </section>
         </aside>
@@ -48,7 +69,7 @@
                 <img src="{{ asset('svg/logos/logo-01.svg') }}" alt="">
             </span>
             <button class="burger-menu">
-                <a href="tel:+38050915844">
+                <a href="tel:+380509105844">
                     <img src="{{ asset('svg/icons/icon-phone-call.svg') }}">
                 </a>
             </button>
@@ -76,7 +97,7 @@
             <section class="mobile-menu-content-contacts header-number">
                 <span>
                     <img src="{{ asset('svg/icons/icon-viber.svg') }}">
-                    <a href="tel:+38050915844">+38 (050) 91-58-44</a>
+                    <a href="tel:+380509105844">+38 (050) 910-58-44</a>
                 </span>
                 <button id="navigate-dsktp-call-1" class="primary-white">Замовити дзвінок</button>
             </section>
@@ -968,7 +989,13 @@
                         </li>
                     </ul>
                 </aside>
-                <p class="d-none d-lg-flex">Будьте впевнені, наш продукт приносить закладам прибуток. Ознайомитися з відгуками можна в нашому інстаграмі.</p>
+                <p class="d-none d-lg-block">Будьте впевнені, наш продукт приносить закладам прибуток. Ознайомитися з відгуками можна в нашому інстаграмі.                   
+                    <span>
+                        <a href="https://www.instagram.com/frutini_official_ua/?hl=ru" target="_blank">
+                            <img src="{{ asset('svg/icons/icon-instagram.svg') }}" alt="instagaram">
+                        </a>
+                    </span>
+                </p>
             </div>
             <div class="main-risks-slider d-none d-lg-flex col-lg-6">
                 <div class="risks-desktop-slider">
@@ -1076,7 +1103,7 @@
             <ul>
                 <li>
                     <h4>Адреса:</h4>
-                    <span>г. Киев, Бориспільська 9</span>
+                    <span>м. Київ, Бориспільська 9</span>
                 </li>
                 <li>
                     <h4>Телефон:</h4>
@@ -1122,7 +1149,7 @@
                 <input type="number" max="999999999999" name="mobile_number" class="form-control" id="mobile_number" placeholder="099-999-99-99" maxlength="10">
             </div>
             <div class="group-input-form">
-                <label for="mobile_number_mesenger">Введіть номер телефону для зв'язку через месенджер:</label>
+                <label for="mobile_number_mesenger">Введіть номер для отримання прайс-листа на месенджер:</label>
                 <aside>
                     <select class="select-msngrs" name="name_msngrs" id="name_msngrs">
                         <option>Viber</option>

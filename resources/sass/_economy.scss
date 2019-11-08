@@ -1,4 +1,7 @@
-
+.main-economy{
+    padding-top: 50px;
+    margin-bottom: -100px;
+}
 .section-title-economy{
     font-family: 'MojitoWeb', sans-serif;
     font-size: 64px;
@@ -141,6 +144,9 @@
 
 
 @media screen and (min-width: 320px) and (max-width: 991px){
+    .main-economy{
+        margin-bottom: 0;
+    }
     .section-title-economy{
         font-size: 48px;
         line-height: 64px;

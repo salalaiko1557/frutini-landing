@@ -35,7 +35,7 @@
 }
 .header-number{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     a{
@@ -242,6 +242,7 @@
     align-items: flex-end;
     padding: 0 10px;
     margin-bottom: 20px;
+    flex-direction: column;
     span{
         margin-bottom: 20px;
         display: flex;
