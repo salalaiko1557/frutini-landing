@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Frutini</title>
         <link rel="shortcut icon" href="{{ asset('images/main/icon.png') }}" type="image/png">
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ mix('/css/app.css') }}" rel="stylesheet" type="text/css" >
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link href="{{ asset('css/slick-theme.css') }}" rel="stylesheet" type="text/css" >
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
@@ -29,12 +29,6 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
     </head>
-
-    <style>
-    .header-number{
-        flex-direction: row;
-    }
-    </style>
     <body>
     <!-- HEADER SECTION -->
 
