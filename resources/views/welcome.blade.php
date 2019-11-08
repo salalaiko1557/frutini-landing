@@ -29,6 +29,12 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
     </head>
+
+    <style>
+    .header-number{
+        flex-direction: row;
+    }
+    </style>
     <body>
     <!-- HEADER SECTION -->
 
