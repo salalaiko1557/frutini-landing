@@ -1,4 +1,4 @@
-.main-header{
+.main-header{ 
     background-image: url("/images/main/bg-main-desktop-with-effects.jpg");
     display: flex;
     flex-direction: column;
@@ -36,8 +36,6 @@
 .header-number{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     a{
         display: flex;
         align-items: center;
