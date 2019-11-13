@@ -27,6 +27,17 @@
     <noscript>
         <img height="1" width="1" src="https://www.facebook.com/tr?id=952684235115201&ev=PageView&noscript=1"/>
     </noscript>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152071134-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-152071134-1');
+    </script>
+
+
     <!-- End Facebook Pixel Code -->
     </head>
     <body>
