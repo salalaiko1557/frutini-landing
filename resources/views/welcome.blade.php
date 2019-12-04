@@ -1148,19 +1148,19 @@
             <p>Для здійснення зворотного дзвінка вкажіть Ваше ім'я та номер телефону</p>
             
             <div class="group-input-form">
-                <label for="formGroupExampleInput">Введіть ім'я та прізвище:</label>
+                <b>Введіть ім'я та прізвище:</b>
                 <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Iван Iванов">
             </div>
             <div class="group-input-form">
-                <label for="email">Введіть E-mail</label>
+                <b>Введіть E-mail</b>
                 <input type="email" name="email" class="form-control" id="email" placeholder="example@email.com">
             </div>      
             <div class="group-input-form">
-                <label for="mobile_number">Введіть номер телефону для зворотного дзвінка:</label>
+                <b>Введіть номер телефону для зворотного дзвінка:</b>
                 <input type="number" max="999999999999" name="mobile_number" class="form-control" id="mobile_number" placeholder="099-999-99-99" maxlength="10">
             </div>
-            <div class="group-input-form">
-                <label for="mobile_number_mesenger">Введіть номер для отримання прайс-листа на месенджер:</label>
+            <div class="group-input-form two-fields">
+                <b>Введіть номер для отримання прайс-листа на месенджер:</b>
                 <aside>
                     <select class="select-msngrs" name="name_msngrs" id="name_msngrs">
                         <option>Viber</option>
@@ -1171,7 +1171,7 @@
                 </aside>
             </div>
             <div class="group-input-form">
-                <label for="partner_type">Оберiть тип партнера</label>
+                <b>Оберiть тип партнера</label>
                 <aside>
                     <select class="select-msngrs" name="partner_type" id="partner_type">
                         <option>Експорт</option>
@@ -1188,7 +1188,7 @@
                     <span id="res_message"></span>
             </div>
             <span>Натискаючи кнопку підтвердити, ви також даєте згоду на обробку Ваших персональних даних</span>
-                <button type="submit" id="send_form" class="primary-white">Підтвердити</button>
+                <button type="submit" id="send_form" class="primary-white send-form">Підтвердити</button>
         </form>
     </section>
 
