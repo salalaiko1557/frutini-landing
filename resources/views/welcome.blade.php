@@ -1170,7 +1170,7 @@
                     <input type="number" max="999999999999" name="mobile_number_mesenger" class="form-control" id="mobile_number_mesenger" placeholder="099-999-99-99" maxlength="10">
                 </aside>
             </div>
-            <div class="group-input-form">
+            <div class="group-input-form send-form">
                 <b>Оберiть тип партнера</label>
                 <aside>
                     <select class="select-msngrs" name="partner_type" id="partner_type">
