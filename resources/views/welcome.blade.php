@@ -1189,6 +1189,7 @@
             </div>
             <span>Натискаючи кнопку підтвердити, ви також даєте згоду на обробку Ваших персональних даних</span>
                 <button type="submit" id="send_form" class="primary-white send-form">Підтвердити</button>
+            <span class="form-bot">Зв'яжемося з Вами в найкоротші терміни</span>
         </form>
     </section>
 
